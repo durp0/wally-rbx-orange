@@ -1918,8 +1918,8 @@ do
                 return math.floor(Value);
             end;
             
-            local returnValue = tonumber(string.format('%.' .. Slider.Rounding .. 'f', Value))
-            return math.floor(returnValue)
+            local returnValue = Slider.Rounding
+            return returnValue
         end;
 
         function Slider:GetValueFromXOffset(X)
