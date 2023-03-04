@@ -1919,7 +1919,7 @@ do
             end;
 
 
-            return tonumber(string.format('%.' .. Slider.Rounding .. 'f', Value))
+            return tonumber(Slider.Rounding)
         end;
 
         function Slider:GetValueFromXOffset(X)
