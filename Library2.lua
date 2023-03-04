@@ -1918,7 +1918,7 @@ do
                 return math.floor(Value);
             end;
             
-            local returnValue = tonumber(string.format('%.2f' .. Slider.Rounding .. 'f', Value))
+            local returnValue = tonumber(string.format('%.' .. Slider.Rounding .. 'f', Value))
             return math.floor(returnValue)
         end;
 
