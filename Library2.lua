@@ -1917,9 +1917,9 @@ do
             if Slider.Rounding == 0 then
                 return math.floor(Value);
             end;
-
-
-            return tonumber(string.format('%.2f' .. Slider.Rounding .. 'f', Value))
+            
+            local returnValue = tonumber(string.format('%.2f' .. Slider.Rounding .. 'f', Value))
+            return math.floor(returnValue)
         end;
 
         function Slider:GetValueFromXOffset(X)
